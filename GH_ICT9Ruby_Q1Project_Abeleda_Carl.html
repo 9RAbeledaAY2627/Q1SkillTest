@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Q1 Project</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #fff; color: #0a192f; }
+
+        header, footer { background: #0a192f; color: #fff; padding: 15px 10%; display: flex; justify-content: space-between; }
+
+        nav a { color: #fff; text-decoration: none; margin-left: 15px; font-weight: bold; }
+
+        .hero { background: #f0f4f8; text-align: center; padding: 30px; }
+
+        .hero span { color: #1e3a8a; }
+
+        .container { width: 70%; margin: 20px auto; }
+
+        .title { background: #0a192f; color: #fff; text-align: center; padding: 8px; border-radius: 5px; }
+
+        .card { border: 2px dashed #0a192f; display: flex; padding: 15px; margin: 15px 0; border-radius: 8px; }
+
+        .card img { width: 180px; height: 100px; }
+
+        .card div { margin-left: 20px; }
+
+        .card ul { list-style: none; padding: 0; }
+
+        .caption { text-align: center; font-size: 14px; margin-bottom: 20px; }
+
+        form { border: 1px solid #ccc; padding: 15px; border-radius: 8px; }
+
+        form label { display: block; margin-top: 10px; font-weight: bold; }
+
+        input[type="text"], input[type="email"], select, textarea { width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box; }
+
+        button { width: 100%; background: #0a192f; color: #fff; border: none; padding: 10px; margin-top: 15px; cursor: pointer; }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div>🏀</div>
+        <nav><a href="#about">About Me</a><a href="#works">My Works</a><a href="#contact">Contact Me</a></nav>
+    </header>
+
+    <section class="hero">
+     <img class="movie-pic" src="https://scontent.fmnl15-1.fna.fbcdn.net/v/t1.15752-9/796138898_1061884830137822_1428709811611903196_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_ohc=FhSO4OSI45wQ7kNvwF9w4OE&_nc_oc=AdqBHmcRHz-dQLJQYtGOWsZZP9hZXDT1zMw_IxXOmbekGh298nqox37FUBWGV9Ez408&_nc_zt=23&_nc_ht=scontent.fmnl15-1.fna&_nc_ss=7baaf&oh=03_Q7cD6gGvsPMd-6G-c-wOIQfe9V8rwaEyc6REpgP2upt1KxJLBw&oe=6AE2C949" alt="Movie Icon" style="width: 100px; height: 100 px; border-radius: 20%;">
+
+        <h1>Hello, I'm <span>Carl Abeleda</span></h1>
+        <p><i>Aspiring Web Developer</i></p>
+    </section>
+
+    <section id="about" class="container">
+        <h2 class="title">About Me</h2>
+        <p style="text-align:center;">Hi! I'm Carl, a student passionate about basketball.</p>
+    </section>
+
+    <section id="works" class="container">
+        <h2 class="title">My Works</h2>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT4Etwn9YseNZjBn99AHtkQXAkeDoT7UKtSsRUVz0ldA&s=10" alt="Spotify">
+            <div>
+                <ul><li>✓ HTML & CSS Projects</li><li>✓ Spotify Artist</li><li>✓ List, Links and Images</li></ul>
+                <a href="#" style="color:#1e3a8a;">View GitHub Repository</a>
+            </div>
+        </div>
+        <p class="caption">My Favorite Spotify Artist</p>
+
+        <div class="card">
+            <img src="https://www.pngmart.com/files/23/Movie-Icon-PNG-Isolated-Pic.png" alt="Movie">
+            <div>
+                <ul><li>✓ HTML & CSS Projects</li><li>✓ HTML Forms</li><li>✓ Movie Recommendations</li></ul>
+                <a href="#" style="color:#1e3a8a;">View GitHub Repository</a>
+            </div>
+        </div>
+        <p class="caption">My Rate a Movie Form</p>
+    </section>
+
+    <hr style="width:70%;">
+
+    <section id="contact" class="container">
+        <h2 class="title">Contact Me</h2>
+        <form>
+            <label>Your Name:</label><input type="text" placeholder="Enter full name">
+            <label>Your Email:</label><input type="email" placeholder="enter your full email address">
+            <label>How did you find me?</label>
+            <input type="radio" name="s"> Facebook <input type="radio" name="s"> Tiktok <input type="radio" name="s"> Instagram
+            <label>Interested in:</label>
+            <input type="checkbox"> Web Design <input type="checkbox"> Graphic Design <input type="checkbox"> Robotics
+            <label>Rate my Portfolio:</label>
+            <select><option>-- Select Rating --</option><option></option>Excellent</option></select>
+            <label>Any Feedback?</label><textarea placeholder="Feedback here..."></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer style="justify-content:center; margin-top:30px;">
+        <p>© 2026 Carl Abeleda. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
